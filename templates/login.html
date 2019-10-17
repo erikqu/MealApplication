@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bulma.css')}}">
+<!-- <link rel="stylesheet" type="text/css" href="./../static/css/bulma.css"> -->
+
+
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+</head>
+
+<div class = "column is-half is-centered">
+        <h1 class = "title is-1"> MEALPREP LOGIN </h1>
+        <div class = "field">
+                <form action="{{ url_for('login')}}" method="POST">     
+                        <class = "label"> Username</class>
+                        <input class = "input" type = "text" placeholder = "Username" name = "username">
+                        <class = "label"> Password</class>
+                        <input class="input" type = "password" placeholder="Password" name = "password">
+                        </div>
+                        <input class = "button is-link"type="submit">
+                </form>
+        </div>
+</html>
