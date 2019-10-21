@@ -13,4 +13,7 @@ A web app for busy students who need a clean, quick way to make tasty meals.
 ## TODO 
 
 - handle DB + noDB situation 
-- (add more features here) 
+- allow users to add meals 
+- add live feed 
+- add users/delete users functionality 
+- communities (?) 
