@@ -1,12 +1,32 @@
 from flask import Flask, render_template, url_for, request
+from werkzeug.security import check_password_hash, generate_password_hash
+import os
 
 app = Flask(__name__)
 
 
+def add_user_to_database(username, password, filename="hashes.txt"):
+    # add a check if the file exists or not
+    passfile = open(filename, "r")
+    data = eval(passfile.read())
+    passfile.close()
+    passfile = open(filename, "w")
+    password_hash = generate_password_hash(password)
+    data[username] = password_hash
+    passfile.write(str(data))
+    passfile.close()
+
 def check_database(username, password):
-    # this function should check either a json
-    # doc or check an actual DB (more work)
-    return True
+    password_file = open("hashes.txt", 'r')
+    password_file = password_file.read()
+    data = eval(password_file)
+    # iterate through all hashes and find that hash.
+    for key in data:
+        curhash = data[key]
+        if key == username:
+            if check_password_hash(curhash, password):
+                return True
+    return False
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -18,7 +38,7 @@ def login():
         password = request.form["password"]
         success = check_database(username, password)
         if not success:
-            return render_template("login.html")
+            return render_template("login.html", loginfail = True)
         else:
             return render_template("main.html")
 
