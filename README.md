@@ -54,9 +54,9 @@ A web app for busy students who need a clean, quick way to make tasty meals.
 - ~~Test Plan (due 10/5, 2 pts)~~
   - ~~Assessment of “partner” team’s analysis~~
   - ~~Testing strategy and test cases~~
-- Design report (due 10/26, 4 pts)
-  - High-level Design (System and Data Models, etc.)
-  - UI screen prototypes and pseudocode of key features
+- ~~Design report (due 10/26, 4 pts)~~
+  - ~~High-level Design (System and Data Models, etc.)~~
+  - ~~UI screen prototypes and pseudocode of key features~~
 - Design review (due 11/9, 2 pts)
   - Assessment of partner team’s design
   - Improvement opportunities
