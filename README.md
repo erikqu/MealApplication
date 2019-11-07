@@ -1,5 +1,5 @@
 # MealApplication
-A web app for busy students who need a clean, quick way to make tasty meals.
+A web app for busy students who need a clean, quick way to make tasty meals or find them on campus. 
 
 ## Running Application
 
