@@ -40,9 +40,17 @@ def login():
         if not success:
             return render_template("login.html", loginfail = True)
         else:
-            return render_template("main.html")
+            return render_template("main.html", username)
+
+
+@app.route("/Events")
+def events():
+    return render_template("events.html")
 
 
 @app.route("/home")
-def main():
-    return render_template("main.html")
+def main(user : str):
+    # get the user json and read in (this assumes we have a dictionary already)
+    recipes = user["recipes"]
+
+    return render_template("main.html", recipes)
