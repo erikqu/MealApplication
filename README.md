@@ -1,5 +1,5 @@
 # MealApplication
-A web app for busy students who need a clean, quick way to make tasty meals or find them on campus. 
+A web app for busy students who need a clean, quick way to make tasty meals or find them on campus.
 
 ## Running Application
 
@@ -57,9 +57,9 @@ A web app for busy students who need a clean, quick way to make tasty meals or f
 - ~~Design report (due 10/26, 4 pts)~~
   - ~~High-level Design (System and Data Models, etc.)~~
   - ~~UI screen prototypes and pseudocode of key features~~
-- Design review (due 11/9, 2 pts)
-  - Assessment of partner team’s design
-  - Improvement opportunities
+- ~~Design review (due 11/9, 2 pts)~~
+  - ~~Assessment of partner team’s design~~
+  - ~~Improvement opportunities~~
 - Team presentation of “working prototype” (~11/26, 3 pts)
 - Team final report including an evaluation of partner team’s prototype (11/30, 3 pts)
 - Individual project assessment (11/30, 2 pts)
