@@ -4,10 +4,21 @@
 <!-- <link rel="stylesheet" type="text/css" href="./../static/css/bulma.css"> -->
 
 <html>
-    <h1 class = "title is-1 is-centered"> MEALPREP HOMEPAGE </h1>
+    <head>
+        <meta charset='utf-8'>
+        <title>Discovery Cookbook</title>
+    </head>
 
+    <body>
+        <div>
+            <a href = "{{ url_for('main') }}" class = "button is-primary is-light">Home</a>
+            <a href = "{{ url_for('cookbook') }}" class = "button is-primary is-light">Cookbook</a>
+            <a href = "{{ url_for('messages') }}" class = "button is-primary is-light">Messages</a>
+            <a href = "{{ url_for('events') }}" class = "button is-primary is-light">Events Page</a>
+            <a href = "{{ url_for('settings') }}" class = "button is-primary is-light">Settings</a>
+        </div>
+        <hr>
 
-    <a href ="{{ url_for('events') }}" class = "button is-primary is-light">Events Page</a>
-
+        <h1 class = "title is-1 is-centered"> {{ user }}'s Homepage </h1>
 
 </html>
