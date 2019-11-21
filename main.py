@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, json
 from werkzeug.security import check_password_hash, generate_password_hash
 import os
 
@@ -16,6 +16,7 @@ def add_user_to_database(username, password, filename="hashes.txt"):
     passfile.write(str(data))
     passfile.close()
 
+
 def check_database(username, password):
     password_file = open("hashes.txt", 'r')
     password_file = password_file.read()
@@ -27,6 +28,12 @@ def check_database(username, password):
             if check_password_hash(curhash, password):
                 return True
     return False
+
+
+def open_json(filename):
+    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+    json_url = os.path.join(SITE_ROOT, "static/data", filename)
+    return json.load(open(json_url))
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -47,13 +54,16 @@ def login():
 def cookbook(user : str):
     return render_template("cookbook.html", user=user)
 
+
 @app.route("/messages/<user>")
 def messages(user : str):
     return render_template("messages.html", user=user)
 
+
 @app.route("/events/<user>")
 def events(user : str):
     return render_template("events.html", user=user)
+
 
 @app.route("/settings/<user>")
 def settings(user : str):
@@ -63,7 +73,5 @@ def settings(user : str):
 @app.route("/home/<user>")
 def main(user : str):
     # get the user json and read in (this assumes we have a dictionary already)
-    # recipes = user["recipes"]
-
-    # return render_template("main.html", recipes)
-    return render_template("main.html", user=user)
+    user = open_json("fake_user.json")
+    return render_template("main.html", user=user['username'])
