@@ -43,24 +43,24 @@ def login():
             return render_template("main.html", user=username)
 
 
-@app.route("/cookbook")
-def cookbook():
-    return render_template("cookbook.html")
+@app.route("/cookbook/<user>")
+def cookbook(user : str):
+    return render_template("cookbook.html", user=user)
 
-@app.route("/messages")
-def messages():
-    return render_template("messages.html")
+@app.route("/messages/<user>")
+def messages(user : str):
+    return render_template("messages.html", user=user)
 
-@app.route("/events")
-def events():
-    return render_template("events.html")
+@app.route("/events/<user>")
+def events(user : str):
+    return render_template("events.html", user=user)
 
-@app.route("/settings")
-def settings():
-    return render_template("settings.html")
+@app.route("/settings/<user>")
+def settings(user : str):
+    return render_template("settings.html", user=user)
 
 
-@app.route("/home")
+@app.route("/home/<user>")
 def main(user : str):
     # get the user json and read in (this assumes we have a dictionary already)
     # recipes = user["recipes"]
