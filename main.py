@@ -75,4 +75,5 @@ def settings(user : str):
 def main(user : str):
     # get the user json and read in (this assumes we have a dictionary already)
     user = open_json("fake_user.json")
-    return render_template("main.html", user=user['username'], recipes=user['timeline_recipes'])
+    return render_template("main.html", user=user['username'], recipes=user['timeline_recipes'],
+                            latest_comment=user['latest_comment'], top_recipes=user['top_recipes'])
