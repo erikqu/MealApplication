@@ -26,7 +26,7 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <strong>{{ recipe['recipe'] }}</strong> <small>by {{ recipe['author'] }}</small> <small>31m</small>
+                <strong>{{ recipe['recipe'] }}</strong> <small>by {{ recipe['author'] }}</small> <small>{{ recipe['time'] }}</small>
                 <br>
                 {{ recipe['description'] }}
               </p>
@@ -34,7 +34,7 @@
             <nav class="level is-mobile">
               <div class="level-left">
                 <a class="level-item">
-                  <p>40</p>
+                  <p>{{ recipe['likes'] }} likes</p>
                 </a>
                 <a class="level-item">
                   <p>Share</p>

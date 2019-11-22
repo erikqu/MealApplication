@@ -3,14 +3,18 @@
   "timeline_recipes": [{
     "recipe": "Spaghetti",
     "author": "BillSpaghetti",
-    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
+    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti",
+    "likes": 25,
+    "time": "15 m"
       }, {
     "recipe": "Chicken",
     "author": "MaryChicken",
-    "description": "chicken chickenchickenchickenchickenchickenchickenchickenchicken chicken chickenchicken chicken chicken chicken chickenchickenchicken chickenchickenchicken chickenchickenchickenchickenchickenchicken "
+    "description": "chicken chickenchickenchickenchickenchickenchickenchickenchicken chicken chickenchicken chicken chicken chicken chickenchickenchicken chickenchickenchicken chickenchickenchickenchickenchickenchicken ",
+    "likes": 197,
+    "time": "2h"
     }
   ],
-  "latest_comment": "I love ramen",
+  "latest_comment": "I love Chicken",
   "top_recipes": [
     "beef",
     "pork",
