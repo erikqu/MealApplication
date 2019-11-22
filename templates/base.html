@@ -11,8 +11,12 @@
 
     <body>
       <div class="columns">
-        <div class="column is-one-fifth">
+        <div class="column is-one-fifth has-text-centered">
+          <br>
           <aside class="menu">
+            <figure class="image is-inline-block is-64x64">
+              <img class="is-rounded" src="https://bulma.io/images/placeholders/64x64.png">
+            </figure>
             <ul class="menu-list">
               <li><a href = "{{ url_for('main', user=user) }}">Home</a></li>
               <li><a href = "{{ url_for('cookbook', user=user) }}">Cookbook</a></li>
@@ -23,9 +27,11 @@
           </aside>
         </div>
         <div class="column is-three-fifths">
+          <br>
           {% block column1 %}{% endblock %}
         </div>
         <div class="column is-one-fifth">
+          <br>
           {% block column2 %}{% endblock %}
         </div>
       </div>

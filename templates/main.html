@@ -2,14 +2,25 @@
 
 {% block column1 %}
 
-    <h1 class = "title is-1 is-centered"> {{ user }}'s Homepage </h1>
+    <input class="input is-large is-primary" type="text" placeholder="Discover Something">
+    <br><br>
+
+    <div class="box">
+      <article class="media">
+        <div class="media-content"
+          <p><strong>Create Post</strong></p>
+          <br>
+          <input class="input" type="text" placeholder="What recipe would you like to share?">
+        </div>
+      </article>
+    </div>
 
     {% for recipe in recipes %}
       <div class="box">
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img src="https://bulma.io/images/placeholders/128x128.png">
+              <img src="https://bulma.io/images/placeholders/64x64.png">
             </p>
           </figure>
           <div class="media-content">
