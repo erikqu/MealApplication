@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, json
+from flask import Flask, render_template, url_for, request, json, redirect
 from werkzeug.security import check_password_hash, generate_password_hash
 import os
 
@@ -47,7 +47,8 @@ def login():
         if not success:
             return render_template("login.html", loginfail = True)
         else:
-            return render_template("main.html", user=username)
+            user = open_json("fake_user.json")
+            return redirect(url_for("main", user=user['username']))
 
 
 @app.route("/cookbook/<user>")
@@ -74,4 +75,4 @@ def settings(user : str):
 def main(user : str):
     # get the user json and read in (this assumes we have a dictionary already)
     user = open_json("fake_user.json")
-    return render_template("main.html", user=user['username'])
+    return render_template("main.html", user=user['username'], recipes=user['timeline_recipes'])

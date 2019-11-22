@@ -1,1 +1,21 @@
-{"username": "Bill"}
+{
+  "username": "spooky_ramen24",
+  "timeline_recipes": [{
+    "recipe": "Spaghetti",
+    "author": "BillSpaghetti",
+    "ingredients": [
+      "Spaghetti0",
+      "Spaghetti1",
+      "Spaghetti2",
+      "Spaghetti3"
+    ]}, {
+      "recipe": "Chicken",
+      "author": "MaryChicken",
+      "ingredients": [
+        "Chicken0",
+        "Chicken1",
+        "Chicken2",
+        "Chicken3"
+      ]}
+    ]
+}
