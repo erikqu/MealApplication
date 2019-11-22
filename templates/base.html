@@ -10,16 +10,25 @@
     </head>
 
     <body>
-        <div>
-            <a href = "{{ url_for('main', user=user) }}" class = "button is-primary is-light">Home</a>
-            <a href = "{{ url_for('cookbook', user=user) }}" class = "button is-primary is-light">Cookbook</a>
-            <a href = "{{ url_for('messages', user=user) }}" class = "button is-primary is-light">Messages</a>
-            <a href = "{{ url_for('events', user=user) }}" class = "button is-primary is-light">Events Page</a>
-            <a href = "{{ url_for('settings', user=user) }}" class = "button is-primary is-light">Settings</a>
+      <div class="columns">
+        <div class="column is-one-fifth">
+          <aside class="menu">
+            <ul class="menu-list">
+              <li><a href = "{{ url_for('main', user=user) }}">Home</a></li>
+              <li><a href = "{{ url_for('cookbook', user=user) }}">Cookbook</a></li>
+              <li><a href = "{{ url_for('messages', user=user) }}">Messages</a></li>
+              <li><a href = "{{ url_for('events', user=user) }}">Events Page</a></li>
+              <li><a href = "{{ url_for('settings', user=user) }}">Settings</a></li>
+            </ul>
+          </aside>
         </div>
-        <hr>
-
-        {% block content %}{% endblock %}
+        <div class="column is-three-fifths">
+          {% block column1 %}{% endblock %}
+        </div>
+        <div class="column is-one-fifth">
+          {% block column2 %}{% endblock %}
+        </div>
+      </div>
 
     </body>
 
