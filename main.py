@@ -72,6 +72,12 @@ def settings(user : str):
     return render_template("settings.html", user=user)
 
 
+@app.route("/recipe/<user>")
+def recipe(user : str):
+    user = open_json("fake_user.json")
+    return render_template("recipe.html", user=user['username'], recipe=user['sample_recipe'])
+
+
 @app.route("/home/<user>")
 def main(user : str):
     # get the user json and read in (this assumes we have a dictionary already)
