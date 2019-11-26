@@ -21,5 +21,15 @@
     "lamb",
     "llama",
     "human"
-  ]
+  ],
+  "cookbook_recipes": [{
+    "recipe": "Spaghetti1",
+    "author": "BillSpaghetti"
+  }, {
+    "recipe": "Spaghetti2",
+    "author": "BillSpaghetti"
+  }, {
+    "recipe": "Spaghetti3",
+    "author": "BillSpaghetti"
+  }]
 }

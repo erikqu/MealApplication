@@ -2,6 +2,53 @@
 
 {% block column1 %}
 
-    <h1 class = "title is-1 is-centered"> {{ user }}'s Cookbook </h1>
+<div class = "columns is-centered">
+  <div class="column is-full">
+    <h1 class = "title is-1"> My Cookbook </h1>
+    <br>
+
+    <input class="input is-large is-primary" type="text" placeholder="Search My Cookbook">
+    <br><br>
+
+    {% for recipe in recipes %}
+      <div class=box>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/64x64.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <p><strong>{{ recipe.recipe }}</strong> by {{ recipe.author }}</p>
+          </div>
+        </article>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block column2 %}
+
+<div class = "columns has-text-centered">
+  <div class="column is-full">
+    <div class="box">
+      <p class="subtitle is-3">Filters</p>
+      <aside class="menu">
+        <ul class="menu-list">
+          <li><a>Allergens</a></li>
+          <li><a>Calories</a></li>
+          <li><a>Ingredients</a></li>
+          <li><a>Price</a></li>
+          <li><a>Time to Make</a></li>
+          <li><a>Last Recently Made</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
