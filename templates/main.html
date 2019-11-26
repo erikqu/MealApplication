@@ -40,11 +40,17 @@
                   <p>Share</p>
                 </a>
                 <a class="level-item">
-                  <p>View Recipe</p>
+                  <a href="{{ url_for('recipe', user=user) }}">View Recipe</a>
                 </a>
               </div>
             </nav>
             <input class="input" type="text" placeholder="Comment">
+            <br><br>
+            <div class="field">
+              <p class="control">
+                <button class="button">Post comment</button>
+              </p>
+            </div>
           </div>
         </article>
       </div>
@@ -62,7 +68,7 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <strong>{{ user }}</strong> <small>40m</small>
+                <strong>{{ user }}</strong> <small>8m</small>
                 <br>
                 {{ latest_comment }}
               </p>
@@ -70,13 +76,10 @@
             <nav class="level is-mobile">
               <div class="level-left">
                 <a class="level-item">
-                  <p>23</p>
+                  <p>9 Likes</p>
                 </a>
                 <a class="level-item">
-                  <p>Reply</p>
-                </a>
-                <a class="level-item">
-                  <p>View Thread</p>
+                  <a href="{{ url_for('recipe', user=user) }}">View Recipe</a>
                 </a>
               </div>
             </nav>

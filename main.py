@@ -53,7 +53,8 @@ def login():
 
 @app.route("/cookbook/<user>")
 def cookbook(user : str):
-    return render_template("cookbook.html", user=user)
+    user = open_json("fake_user.json")
+    return render_template("cookbook.html", user=user['username'], recipes=user['cookbook_recipes'])
 
 
 @app.route("/messages/<user>")
@@ -69,6 +70,12 @@ def events(user : str):
 @app.route("/settings/<user>")
 def settings(user : str):
     return render_template("settings.html", user=user)
+
+
+@app.route("/recipe/<user>")
+def recipe(user : str):
+    user = open_json("fake_user.json")
+    return render_template("recipe.html", user=user['username'], recipe=user['sample_recipe'])
 
 
 @app.route("/home/<user>")
