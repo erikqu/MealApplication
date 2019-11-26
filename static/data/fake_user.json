@@ -14,7 +14,7 @@
     "time": "2h"
     }
   ],
-  "latest_comment": "I love Chicken",
+  "latest_comment": "I love Spaghetti",
   "top_recipes": [
     "beef",
     "pork",
@@ -24,12 +24,44 @@
   ],
   "cookbook_recipes": [{
     "recipe": "Spaghetti1",
-    "author": "BillSpaghetti"
+    "author": "BillSpaghetti",
+    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
   }, {
     "recipe": "Spaghetti2",
-    "author": "BillSpaghetti"
+    "author": "BillSpaghetti",
+    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
   }, {
     "recipe": "Spaghetti3",
-    "author": "BillSpaghetti"
-  }]
+    "author": "BillSpaghetti",
+    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
+  }],
+  "sample_recipe": {
+    "recipe": "Spaghetti",
+    "author": "BillSpaghetti",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit.",
+    "ingredients": [
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti"
+    ],
+    "instructions": [
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti",
+      "Spaghetti"
+    ],
+    "prep_time": "10 min",
+    "cook_time": "15 min",
+    "calories": "300 calories",
+    "servings": "2",
+    "allergens": "none",
+    "price": "$5",
+    "comments": "none",
+    "rating": "4.97/5"
+  }
 }

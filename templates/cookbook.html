@@ -19,7 +19,8 @@
             </p>
           </figure>
           <div class="media-content">
-            <p><strong>{{ recipe.recipe }}</strong> by {{ recipe.author }}</p>
+            <p><strong>{{ recipe.recipe }}</strong> <small>by {{ recipe.author }}</small></p>
+            {{ recipe['description'] }}
           </div>
         </article>
       </div>

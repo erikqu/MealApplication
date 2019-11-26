@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block column1 %}
+
+<h1 class="title is-1">{{ recipe['recipe'] }}</h1>
+<h2 class="subtitle is-5">by {{ recipe['author'] }}</h2>
+
+<div class="box">
+    <h1 class="title is-4">Description</h1>
+    <p>{{ recipe['description'] }}</p>
+    <br>
+
+    <h1 class="title is-4">Ingredients</h1>
+    <ul>
+    {% for ingredient in recipe['ingredients'] %}
+      <li><p>{{ ingredient }}</p></li>
+    {% endfor %}
+    </ul>
+    <br>
+
+    <h1 class="title is-4">Instructions</h1>
+    <ol>
+    {% for instruction in recipe['instructions'] %}
+      <li><p>{{ instruction }}</p></li>
+    {% endfor %}
+    </ol>
+</div>
+
+<div class="box">
+  <article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>spooky_ramen24</strong>
+          <br>
+          I like Spaghetti
+          <br>
+          <small><a>9 Like</a> · <a>Reply</a> · </small>
+        </p>
+      </div>
+    </div>
+  </article>
+  <article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="field">
+        <p class="control">
+          <textarea class="textarea" placeholder="Add a comment..."></textarea>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <button class="button">Post comment</button>
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+
+{% endblock %}
+
+{% block column2 %}
+
+<div class = "columns">
+  <div class="column is-full">
+    <div class="box">
+      <p class="subtitle is-3">Attributes</p>
+      <aside class="menu">
+        <ul class="menu-list">
+          <li><a>Rating: {{ recipe['rating'] }}</a></li>
+          <li><a>Allergens: {{ recipe['allergens'] }}</a></li>
+          <li><a>Calories: {{ recipe['calories'] }}</a></li>
+          <li><a>Price: {{ recipe['price'] }}</a></li>
+          <li><a>Prep Time: {{ recipe['prep_time'] }}</a></li>
+          <li><a>Cook Time: {{ recipe['cook_time'] }}</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
