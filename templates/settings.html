@@ -6,17 +6,27 @@
 
 
 	<div class = "box"> 
-		<input id = "changePassword" class="input" type="text" placeholder = "Change Password" style="width:30%;">
-		<br><br>
 		<input id = "privateProfile" name="privateProfile" type="checkbox" class="switch" checked="checked">
 		<label for = "privateProfile">Allow Friend Requests</label>
 		<br><br>
 		<input id = "allowMessages" name="allowMessages" type="checkbox" class="switch" checked="checked">
 		<label for = "allowMessages"> Allow Messages From Friends Only</label> 
 		<br><br>
-		<input id = "enableDarkTheme" name="enableDarkTheme" type="checkbox" class="switch" checked="unchecled">
+		<input id = "enableDarkTheme" name="enableDarkTheme" type="checkbox" class="switch">
 		<label for = "enableDarkTheme">Enable Dark Theme</label> 
 		<br><br>
+		<input id="enableTwoFactor" name="enableTwoFactor" type="checkbox" class="switch">
+		<label for="enableTwoFactor">Enable Two Factor Authentication</label>
+		<br><br>
+		Change Password:
+		<br>
+		<input id="oldPassword" name="oldPassword" type="text" placeholder="Old Password"><br>
+		<input id="newPassword" name="newPassword" type="text" placeholder="New Password"><br>
+		<input id="confirmNewPassword" name="confirmNewPassword" type="text" placeholder="Confirm New Password"><br><br>
+		Change Email:
+		<br>
+		<input id="email" name="email" type="text" placeholder="Enter email"><br><br>
+		
 		<input class = "button is-success" type="submit" value="Save Changes">		
 	</div>
 
