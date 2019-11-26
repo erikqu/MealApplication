@@ -24,12 +24,15 @@
   ],
   "cookbook_recipes": [{
     "recipe": "Spaghetti1",
-    "author": "BillSpaghetti"
+    "author": "BillSpaghetti",
+    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
   }, {
     "recipe": "Spaghetti2",
-    "author": "BillSpaghetti"
+    "author": "BillSpaghetti",
+    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
   }, {
     "recipe": "Spaghetti3",
-    "author": "BillSpaghetti"
+    "author": "BillSpaghetti",
+    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
   }]
 }
