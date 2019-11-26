@@ -3,42 +3,42 @@
   "timeline_recipes": [{
     "recipe": "Spaghetti",
     "author": "BillSpaghetti",
-    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit.",
     "likes": 25,
     "time": "15 m"
       }, {
     "recipe": "Chicken",
     "author": "MaryChicken",
-    "description": "chicken chickenchickenchickenchickenchickenchickenchickenchicken chicken chickenchicken chicken chicken chicken chickenchickenchicken chickenchickenchicken chickenchickenchickenchickenchickenchicken ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit.",
     "likes": 197,
     "time": "2h"
     }
   ],
   "latest_comment": "I love Spaghetti",
   "top_recipes": [
-    "beef",
-    "pork",
-    "lamb",
-    "llama",
-    "human"
+    "Pulled Pork Sandwich",
+    "Spaghetti",
+    "Chicken",
+    "Ramen",
+    "Hamburger"
   ],
   "cookbook_recipes": [{
-    "recipe": "Spaghetti1",
+    "recipe": "Spaghetti",
     "author": "BillSpaghetti",
-    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit."
   }, {
-    "recipe": "Spaghetti2",
-    "author": "BillSpaghetti",
-    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
+    "recipe": "Chicken",
+    "author": "MaryChicken",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit."
   }, {
-    "recipe": "Spaghetti3",
-    "author": "BillSpaghetti",
-    "description": "spaghetti spaghetti spaghetti spaghettispaghettispaghettispaghetti spaghetti spaghettispaghetti spaghetti spaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghettispaghetti"
+    "recipe": "Soup",
+    "author": "soup_man86",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit."
   }],
   "sample_recipe": {
     "recipe": "Spaghetti",
     "author": "BillSpaghetti",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis a purus commodo, at laoreet turpis porta. Maecenas luctus sodales nibh. Nam vitae arcu ac tortor ullamcorper vulputate. Ut eu malesuada lectus. Donec viverra odio id leo iaculis ullamcorper. Sed semper, urna a lacinia dignissim, elit eros sollicitudin augue, et lacinia nisi nibh quis urna. Sed blandit sit amet sem et dictum. Quisque nec posuere velit.",
     "ingredients": [
       "Spaghetti",
       "Spaghetti",

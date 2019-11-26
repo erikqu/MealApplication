@@ -21,6 +21,11 @@
           <div class="media-content">
             <p><strong>{{ recipe.recipe }}</strong> <small>by {{ recipe.author }}</small></p>
             {{ recipe['description'] }}
+            <nav class="level is-mobile">
+                <a class="level-item">
+                  <a href="{{ url_for('recipe', user=user) }}">View Recipe</a>
+                </a>
+            </nav>
           </div>
         </article>
       </div>
